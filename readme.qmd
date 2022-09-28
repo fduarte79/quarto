@@ -1,0 +1,63 @@
+---
+title: "Quarto - Tutorial"
+author: "Felipe Duarte"
+format: html
+editor: visual
+---
+
+Titles
+
+# Titles 1
+  
+## Titles 2
+  
+### Titles 3
+  
+#### Titles 4
+
+##### Titles 5
+  
+###### Titles 6
+
+Fonte: **bold**\
+Fonte: *italic*
+  
+Codebox: `code`
+
+- non-ordenado
+
+1. ordenaded
+
+Link: [quarto](quarto.org "Quarto")
+
+```{r}
+BOD
+```
+
+| Col1 | Col2 | Col3 |
+|:-----|:----:|-----:|
+|   X  |      |      |
+|      |  Y   |      |
+|      |      |   z  |
+: table
+
+{{< short code >}}
+
+
+Horizontal rule. 
+---------------------------------------------------------------------
+
+Section to run
+```{r}
+library(quarto)
+```
+
+Plotting graphs
+```{r}
+library(ggplot2)
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) + 
+  geom_point() + geom_smooth(aes(colour = Species))
+```
+
+Imagem: [![caption](iris.png){fig-alt="text" fig-align="left"}](https://github.com/fduarte79/quarto/blob/main/iris.png)

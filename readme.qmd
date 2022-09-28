@@ -5,30 +5,32 @@ format: html
 editor: visual
 ---
 
-# Título 1
+Titles
 
-## Título 2
+# Titles 1
+  
+## Titles 2
+  
+### Titles 3
+  
+#### Titles 4
 
-### Título 3
+##### Titles 5
+  
+###### Titles 6
 
-#### Título 4
+Fonte: **bold**\
+Fonte: *italic*
+  
+Codebox: `code`
 
-##### Título 5
+- non-ordenado
 
-###### Título 6
+1. ordenaded
 
-**negito**\
-*itálico*
+Link: [quarto](quarto.org "Quarto")
 
-`code`
-
--   item não ordenado
-
-1.  item ordenado
-
-[quarto](quarto.org "Quarto")
-
-[![caption](quarto.png){fig-alt="text" fig-align="left"}](https://quarto.org/quarto.png)
+Imagem: [![caption](quarto.png){fig-alt="text" fig-align="left"}](https://quarto.org/quarto.png)
 
 ```{r}
 BOD
@@ -36,18 +38,26 @@ BOD
 
 | Col1 | Col2 | Col3 |
 |:-----|:----:|-----:|
-|      |      |      |
-|      |      |      |
-|      |      |      |
-
+|   X  |      |      |
+|      |  Y   |      |
+|      |      |   z  |
 : table
 
 {{< short code >}}
 
-Horizontal rule.
 
-------------------------------------------------------------------------
+Horizontal rule. 
+---------------------------------------------------------------------
 
+Section to run
 ```{r}
-library(dplyr)
+library(quarto)
+```
+
+Plotting graphs
+```{r}
+library(ggplot2)
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) + 
+  geom_point() + geom_smooth(aes(colour = Species))
 ```

@@ -1,0 +1,53 @@
+---
+title: "Quarto - Tutorial"
+author: "Felipe Duarte"
+format: html
+editor: visual
+---
+
+# Título 1
+
+## Título 2
+
+### Título 3
+
+#### Título 4
+
+##### Título 5
+
+###### Título 6
+
+**negito**\
+*itálico*
+
+`code`
+
+-   item não ordenado
+
+1.  item ordenado
+
+[quarto](quarto.org "Quarto")
+
+[![caption](quarto.png){fig-alt="text" fig-align="left"}](https://quarto.org/quarto.png)
+
+```{r}
+BOD
+```
+
+| Col1 | Col2 | Col3 |
+|:-----|:----:|-----:|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+: table
+
+{{< short code >}}
+
+Horizontal rule.
+
+------------------------------------------------------------------------
+
+```{r}
+library(dplyr)
+```
